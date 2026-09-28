@@ -31,8 +31,6 @@ When the user asks to add a word:
 
 Search the Notion database for an existing entry whose `Front` matches the new word.
 
-Treat capitalization differences as equivalent when appropriate for German nouns and ordinary vocabulary. Also recognize obvious whitespace differences.
-
 ### Step 2 — If the word does not exist
 
 Add it to the Notion database with:
@@ -40,74 +38,14 @@ Add it to the Notion database with:
 * `Front` and `Back` = the requested German word or expression and its definition.
 * `has been exported` = `false`
 
-Do not mark a newly added word as exported. 
-The information for what should go on the cards and on the `Front` and `Back` should be as described in the `German vocabulary analysis` and `ANKI CARD FORMAT` parts below.
-
-
 ### Step 3 — If the word already exists
 
-Do not create a duplicate.
-
-Tell the user that the word already exists in the database and end the action.
+Do not create a duplicate. Tell the user that the word already exists in the database and end the action.
 
 
-## German vocabulary analysis
-
-For every vocabulary item, determine its grammatical type and generate learning information appropriate to that type.
-
-### Verbs
-
-For a German verb, include:
-
-* partizip 2 and präteritum
-* common prepositions, when applicable
-* the case required by the preposition, when useful
-* common meanings/usages
-* English definition for each usage
-* one natural German example sentence for each important common usage
-* an English translation of each example sentence
-* auxiliary verb (`haben` or `sein`) where relevant
 
 
-Also indicate important characteristics such as:
-
-* separable/inseparable prefix
-* reflexive usage
-* irregularity
-* required preposition + case
-
-Do not invent obscure or unnatural usages. Prioritize common contemporary German.
-
-### Nouns
-
-For a German noun, include:
-
-* noun
-* definite article
-* plural form
-* common meanings/usages
-* English definition for each usage
-* one natural German example sentence for each important common usage
-* English translation of each example
-
-Always provide the article and plural when they are known.
-
-### Adjectives and other parts of speech
-
-Include:
-
-* part of speech
-* important grammatical information
-* common meanings/usages
-* English definition for each usage
-* natural German examples
-* English translations
-
-Only include grammatical information that is useful for learning the word.
-
----
-
-## ANKI CARD FORMAT
+## Instructions for adding the word into the datasource | ANKI CARD FORMAT
 
 Each exported vocabulary item must produce exactly two fields:
 
@@ -121,9 +59,11 @@ Do not include any English definitions, English translations, or bilingual expla
 Include:
 - the German word/expression
 - part of speech
-- grammatical information if useful
-- German example sentence(s)
-- German usage labels or notes if helpful
+- grammatical information 
+   - for nouns: definite article, plural form
+   - for verbs: partizip 2 (plus the required auxiliary verb sein or haben) and präteritum, common prepositions and the case required by the preposition; Also indicate important characteristics such as: separable/inseparable prefix, reflexive usage
+- German example sentence(s) for each common usage
+- 
 
 ### Back
 The Back must contain only English content for meaning and translation.
@@ -132,6 +72,7 @@ Include:
 - English definition(s) for each usage
 - English translation of each German example sentence
 - brief grammatical notes only if they help understanding
+
 ---
 # Action: REMOVE WORD
 
