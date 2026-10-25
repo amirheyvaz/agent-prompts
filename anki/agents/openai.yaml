@@ -1,0 +1,6 @@
+interface:
+  display_name: anki
+  short_description: German vocabulary to Anki
+  default_prompt: Manage my German vocabulary and Anki cards in Notion.
+policy:
+  allow_implicit_invocation: true

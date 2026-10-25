@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "anki",
+  "version": "0.1.0",
+  "description": "Manage German vocabulary in Notion and prepare Anki-ready flashcards and CSV exports.",
+  "author": {
+    "name": "Plugin owner"
+  },
+  "extensions": {
+    "com.openai": {
+      "apps": "./.app.json",
+      "interface": {
+        "displayName": "anki",
+        "shortDescription": "German vocabulary to Anki",
+        "longDescription": "Add, find, and remove German vocabulary in the Notion words database, create high-quality bilingual flashcards, and export them as Anki-compatible CSV.",
+        "developerName": "Plugin owner",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": "Add a German word to my Anki vocabulary in Notion."
+      }
+    }
+  }
+}
