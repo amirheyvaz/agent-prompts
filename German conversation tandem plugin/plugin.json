@@ -1,0 +1,24 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "Amir Hossein Eyvazkhani "
+  },
+  "description": "Let's role play in German!",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "capabilities": [
+          "skills"
+        ],
+        "category": "Education & Research",
+        "defaultPrompt": [],
+        "developerName": "Amir Hossein Eyvazkhani ",
+        "displayName": "German conversation tandem",
+        "longDescription": "Let's role play in German!",
+        "shortDescription": "Let's role play in German!"
+      }
+    }
+  },
+  "name": "gpt-f356d7e89f6149746fd78c2613d4a23a",
+  "version": "0.1.1+bundle.88dc77f970e86880841ddf5d661130c0"
+}
